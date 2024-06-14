@@ -1,11 +1,12 @@
-import { RouterProvider } from 'react-router-dom';
-import router from './Router';
+// import { RouterProvider } from 'react-router-dom';
+// import router from './Router';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { darkTheme, lightTheme } from './theme';
 import { useRecoilValue } from 'recoil';
 import { isDarkAtom } from './atom';
+import Router from './Router';
 
 function App() {
   const isDark = useRecoilValue(isDarkAtom)
@@ -14,7 +15,8 @@ function App() {
     <>
       <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
         <GlobalStyle />
-        <RouterProvider router={router} />
+        {/* <RouterProvider router={router} /> */}
+        <Router />
         <ReactQueryDevtools initialIsOpen={true} />
       </ThemeProvider>
     </>
