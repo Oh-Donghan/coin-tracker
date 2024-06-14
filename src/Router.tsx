@@ -28,20 +28,19 @@ const router = createBrowserRouter([
 
 export default router;
 
-/* 가장 많이 사용되는 라우터 사용법
-function Router() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Coins />} />
-        <Route path='/:coinId' element={<Coin />}>
-          <Route path='price' element={<Price />} />
-          <Route path='chart' element={<Chart />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
+// 가장 많이 사용되는 라우터 사용법
+// function Router() {
+//   return (
+//     <HashRouter>
+//       <Routes>
+//         <Route path='/' element={<Coins />} />
+//         <Route path='/:coinId' element={<Coin />}>
+//           <Route path='price' element={<Price />} />
+//           <Route path='chart' element={<Chart />} />
+//         </Route>
+//       </Routes>
+//     </HashRouter>
+//   );
+// }
 
-export default Router;
-*/
+// export default Router;
